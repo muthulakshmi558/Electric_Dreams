@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@6ewv^a0%*+hv$6@ngs$nvdnzw&fijt&ic9&d3tp8@9u3#7vru'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['electric-dreams-fj4g.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -63,7 +63,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'electrical_booking.urls'
 AUTH_USER_MODEL = "electrical_app.User"
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "https://electric-dreams-phi.vercel.app",
 ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
